@@ -30,8 +30,7 @@ export default async function DashboardPage() {
               <p className="text-sm text-gray-600">Welcome back,</p>
               <p className="font-semibold text-gray-900">{user.firstName || 'Friend'}!</p>
             </div>
-            <UserButton 
-              afterSignOutUrl="/"
+            <UserButton
               appearance={{
                 elements: {
                   avatarBox: "w-12 h-12"
