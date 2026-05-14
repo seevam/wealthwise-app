@@ -1,6 +1,6 @@
 'use client'
 
-import { SignUpButton, SignInButton } from '@clerk/nextjs'
+import { SignUpButton, SignInButton, useUser } from '@clerk/nextjs'
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation'
 const NAV_LINKS = ['Features', 'How It Works', 'Pricing', 'Blog'];
