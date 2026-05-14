@@ -690,8 +690,8 @@ export default function WealthWise() {
               <div style={{ display: 'flex', gap: 16, marginTop: 24 }}>
                 {['📘', '🐦', '📸'].map(icon => (
                   <a key={icon} href="#" style={{ fontSize: 20, opacity: 0.4, transition: 'opacity 0.2s' }}
-                    onMouseEnter={e => e.target.style.opacity = 1}
-                    onMouseLeave={e => e.target.style.opacity = 0.4}>
+                    onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+                    onMouseLeave={e => (e.currentTarget.style.opacity = '0.4')}>
                     {icon}
                   </a>
                 ))}
