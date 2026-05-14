@@ -120,7 +120,7 @@ export default function WealthWise() {
       router.push('/dashboard')
     }
   }, [isLoaded, isSignedIn, router])
-     w w  await
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
