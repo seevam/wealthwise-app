@@ -70,7 +70,7 @@ const STEPS = [
   { n: '04', title: 'Win in Real Life', body: 'Translate skills into actual decisions. Build wealth habits that compound over time.', icon: '💰' },
 ];
 
-function FloatingOrb({ style }) {
+function FloatingOrb({ style }: { style: React.CSSProperties }) {
   return (
     <div style={{
       position: 'absolute',
@@ -82,7 +82,7 @@ function FloatingOrb({ style }) {
   );
 }
 
-function Counter({ target, suffix = '' }) {
+function Counter({ target, suffix = '' }: { target: string; suffix?: string }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const started = useRef(false);
